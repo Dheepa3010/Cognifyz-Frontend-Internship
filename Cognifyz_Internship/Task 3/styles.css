@@ -1,0 +1,607 @@
+/* ================================
+   NEXORA TECHNOLOGIES
+   RESPONSIVE DESIGN
+   ================================ */
+
+
+/* ---------- Basic Reset ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #080611;
+    color: #f5f2ff;
+    line-height: 1.6;
+}
+
+
+/* ---------- Header ---------- */
+
+.header {
+    width: 100%;
+    padding: 25px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #080611;
+
+    border-bottom: 1px solid rgba(170, 100, 255, 0.15);
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo h1 {
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+.logo span {
+    display: block;
+    color: #a978ff;
+    font-size: 8px;
+    letter-spacing: 4px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #aaa2b9;
+    text-decoration: none;
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #b66cff;
+}
+
+
+/* ---------- Hero ---------- */
+
+.hero {
+    width: 86%;
+    max-width: 1250px;
+
+    min-height: 650px;
+
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+    gap: 70px;
+}
+
+
+/* ---------- Futuristic AI Visual ---------- */
+
+.hero-visual {
+    height: 480px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ai-orb {
+    width: 230px;
+    height: 230px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        radial-gradient(
+            circle at 35% 30%,
+            #eee5ff,
+            #a855f7 25%,
+            #5b21b6 55%,
+            #170b2d
+        );
+
+    box-shadow:
+        0 0 45px #8b5cf6,
+        0 0 110px rgba(139, 92, 246, 0.4);
+
+    animation: floating 4s ease-in-out infinite;
+}
+
+.core {
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 4px;
+}
+
+
+/* ---------- Orbit ---------- */
+
+.orbit {
+    position: absolute;
+
+    border: 1px solid rgba(167, 139, 250, 0.4);
+
+    border-radius: 50%;
+}
+
+.orbit-one {
+    width: 400px;
+    height: 160px;
+
+    transform: rotate(-25deg);
+}
+
+.orbit-two {
+    width: 350px;
+    height: 250px;
+
+    transform: rotate(55deg);
+}
+
+
+/* ---------- AI Status ---------- */
+
+.status-card {
+    position: absolute;
+
+    bottom: 45px;
+    right: 20px;
+
+    width: 220px;
+
+    padding: 18px;
+
+    background: rgba(20, 14, 35, 0.9);
+
+    border: 1px solid rgba(167, 139, 250, 0.35);
+
+    border-radius: 15px;
+
+    color: #c4b5fd;
+
+    font-size: 11px;
+}
+
+.status-dot {
+    display: inline-block;
+
+    width: 8px;
+    height: 8px;
+
+    margin-right: 8px;
+
+    background: #a78bfa;
+
+    border-radius: 50%;
+
+    box-shadow: 0 0 15px #a78bfa;
+}
+
+.status-card small {
+    display: block;
+
+    margin-top: 8px;
+
+    color: #777084;
+}
+
+
+/* ---------- Hero Content ---------- */
+
+.label {
+    color: #a978ff;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 20px;
+}
+
+.hero-content h2 {
+    font-size: clamp(45px, 6vw, 75px);
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 25px;
+}
+
+.hero-content h2 span {
+    display: block;
+
+    color: #a978ff;
+}
+
+.hero-content > p:not(.label) {
+    max-width: 600px;
+
+    color: #aaa2b9;
+
+    font-size: 16px;
+
+    margin-bottom: 30px;
+}
+
+
+/* ---------- Button ---------- */
+
+.button {
+    display: inline-block;
+
+    padding: 14px 24px;
+
+    color: white;
+
+    text-decoration: none;
+
+    border: 1px solid #9d5cff;
+
+    border-radius: 30px;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #8d4cff;
+
+    box-shadow:
+        0 0 30px rgba(157, 92, 255, 0.3);
+
+    transform: translateY(-3px);
+}
+
+
+/* ---------- Vision ---------- */
+
+.vision {
+    width: 86%;
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 100px 0;
+}
+
+.vision h2,
+.heading h2 {
+    font-size: clamp(35px, 5vw, 60px);
+
+    line-height: 1.05;
+
+    margin-bottom: 20px;
+}
+
+.vision h2 span,
+.heading h2 span {
+    color: #a978ff;
+}
+
+.vision > p:last-child {
+    max-width: 750px;
+
+    color: #aaa2b9;
+
+    font-size: 16px;
+}
+
+
+/* ---------- Technologies ---------- */
+
+.technologies {
+    width: 86%;
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 100px 0;
+}
+
+.heading {
+    margin-bottom: 50px;
+}
+
+.heading > p:last-child {
+    color: #aaa2b9;
+}
+
+
+/* ---------- Technology Grid ---------- */
+
+.technology-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+/* ---------- Cards ---------- */
+
+.tech-card {
+    position: relative;
+
+    min-height: 270px;
+
+    padding: 30px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #241238,
+            #0e0b16
+        );
+
+    border: 1px solid rgba(165, 92, 255, 0.22);
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    transition: 0.35s;
+}
+
+.tech-card:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(180, 105, 255, 0.7);
+
+    box-shadow:
+        0 20px 50px rgba(103, 40, 180, 0.2);
+}
+
+.number {
+    color: #625b6c;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+}
+
+.icon {
+    margin-top: 25px;
+
+    color: #b36cff;
+
+    font-size: 30px;
+}
+
+.tech-card h3 {
+    margin-top: 15px;
+    margin-bottom: 12px;
+
+    font-size: 21px;
+}
+
+.tech-card p {
+    color: #958da2;
+
+    font-size: 14px;
+}
+
+
+/* ---------- Footer ---------- */
+
+footer {
+    margin-top: 50px;
+
+    padding: 40px 7%;
+
+    border-top: 1px solid rgba(170, 100, 255, 0.15);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    color: #777080;
+
+    font-size: 11px;
+}
+
+footer strong {
+    color: #eee8f7;
+}
+
+footer small {
+    display: block;
+
+    color: #a978ff;
+
+    font-size: 7px;
+
+    letter-spacing: 3px;
+}
+
+
+/* ---------- Animation ---------- */
+
+@keyframes floating {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-18px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* =================================
+   TABLET
+   ================================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+        width: 90%;
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        padding: 70px 0;
+    }
+
+    .hero-visual {
+        order: -1;
+
+        height: 400px;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-content > p:not(.label) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .technology-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .vision,
+    .technologies {
+        width: 90%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+/* =================================
+   MOBILE
+   ================================= */
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 20px 5%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        width: 90%;
+
+        padding: 50px 0;
+    }
+
+    .hero-visual {
+        height: 300px;
+    }
+
+    .ai-orb {
+        width: 160px;
+        height: 160px;
+    }
+
+    .core {
+        font-size: 30px;
+    }
+
+    .orbit-one {
+        width: 280px;
+        height: 110px;
+    }
+
+    .orbit-two {
+        width: 250px;
+        height: 170px;
+    }
+
+    .status-card {
+        bottom: 5px;
+        right: 0;
+
+        width: 180px;
+    }
+
+    .hero-content h2 {
+        font-size: 43px;
+
+        letter-spacing: -2px;
+    }
+
+    .vision,
+    .technologies {
+        width: 90%;
+
+        padding: 70px 0;
+    }
+
+    /* Mobile = one card per row */
+
+    .technology-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-card {
+        min-height: 230px;
+    }
+
+    footer {
+        padding: 35px 5%;
+    }
+}
+
+
+/* =================================
+   VERY SMALL MOBILE
+   ================================= */
+
+@media (max-width: 380px) {
+
+    .hero-content h2 {
+        font-size: 36px;
+    }
+
+    .ai-orb {
+        width: 140px;
+        height: 140px;
+    }
+
+    .status-card {
+        width: 165px;
+    }
+}

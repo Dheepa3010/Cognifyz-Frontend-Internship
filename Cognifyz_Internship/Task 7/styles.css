@@ -1,0 +1,307 @@
+/* GLOBAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080611;
+    color: #f5f2ff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* NAVBAR */
+
+.custom-navbar {
+    background: rgba(8, 6, 17, 0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.logo {
+    color: white !important;
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.logo span {
+    display: block;
+    font-size: 7px;
+    letter-spacing: 4px;
+    color: #b783ff;
+}
+
+.nav-link {
+    color: #b8b0c6 !important;
+    margin-left: 15px;
+}
+
+.nav-link:hover {
+    color: #b66cff !important;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 7vw, 82px);
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: -3px;
+}
+
+.hero h1 span,
+h2 span {
+    display: block;
+    color: #a855f7;
+}
+
+.hero-text {
+    color: #aaa2b9;
+    font-size: 17px;
+    max-width: 600px;
+    margin: 25px 0;
+    line-height: 1.8;
+}
+
+
+/* BADGE */
+
+.futuristic-badge {
+    background: rgba(168, 85, 247, 0.15);
+    color: #c084fc;
+    border: 1px solid rgba(192, 132, 252, 0.3);
+    padding: 10px 14px;
+    letter-spacing: 2px;
+}
+
+
+/* BUTTON */
+
+.futuristic-button {
+    background: linear-gradient(135deg, #7c3aed, #a855f7);
+    color: white;
+    padding: 14px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.futuristic-button:hover {
+    background: linear-gradient(135deg, #8b5cf6, #c084fc);
+    color: white;
+    transform: translateY(-2px);
+}
+
+
+/* AI CIRCLE */
+
+.ai-circle {
+    width: 300px;
+    height: 300px;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle at 35% 30%,
+            #e9ddff,
+            #a855f7 25%,
+            #5b21b6 55%,
+            #160b2d
+        );
+
+    box-shadow:
+        0 0 60px rgba(168, 85, 247, 0.7),
+        0 0 130px rgba(124, 58, 237, 0.3);
+
+    animation: float 4s ease-in-out infinite;
+}
+
+.ai-core {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 6px;
+}
+
+
+/* SECTIONS */
+
+.technology-section,
+.about-section {
+    padding: 110px 0;
+}
+
+.technology-section {
+    background: #0d0917;
+}
+
+.section-label {
+    color: #a855f7;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+h2 {
+    font-size: clamp(38px, 5vw, 62px);
+    margin: 15px 0;
+    line-height: 1;
+}
+
+.section-description {
+    color: #958da2;
+}
+
+
+/* BOOTSTRAP CARDS */
+
+.tech-card {
+    background: linear-gradient(145deg, #241238, #100b1c);
+    color: white;
+
+    border: 1px solid rgba(168, 85, 247, 0.2);
+
+    border-radius: 18px;
+
+    transition: 0.3s;
+}
+
+.tech-card:hover {
+    transform: translateY(-8px);
+    border-color: #a855f7;
+}
+
+.tech-number {
+    color: #a855f7;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+.card-title {
+    margin-bottom: 15px;
+}
+
+.card-text {
+    color: #aaa2b9;
+    line-height: 1.7;
+}
+
+
+/* ABOUT */
+
+.about-section p {
+    color: #aaa2b9;
+    line-height: 1.8;
+}
+
+
+/* BOOTSTRAP ACCORDION */
+
+.custom-accordion .accordion-item {
+    background: #130d20;
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    margin-bottom: 10px;
+    border-radius: 10px !important;
+    overflow: hidden;
+}
+
+.custom-accordion .accordion-button {
+    background: #1c122c;
+    color: white;
+    box-shadow: none;
+}
+
+.custom-accordion .accordion-button:not(.collapsed) {
+    background: #2b1742;
+    color: #c084fc;
+}
+
+.custom-accordion .accordion-body {
+    background: #130d20;
+    color: #aaa2b9;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #06040c;
+    padding: 45px 0;
+    border-top: 1px solid rgba(168, 85, 247, 0.2);
+    color: #847c91;
+}
+
+footer h5 {
+    color: #c084fc;
+    letter-spacing: 2px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+
+/* ANIMATION */
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .hero {
+        text-align: center;
+    }
+
+    .hero-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ai-circle {
+        width: 220px;
+        height: 220px;
+    }
+
+    .ai-core {
+        font-size: 45px;
+    }
+
+}
